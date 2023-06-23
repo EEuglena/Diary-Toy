@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Gothic+A1:100,300,700");
+
+.article {
+	width: 60vw;
+	margin-bottom: 50px;
+	padding: 5vw;
+	box-shadow: 10px 10px 10px #b4c4d2;
+	background-color: #ffffff88;
+	border-radius: 15px;
+}
+
+.article h1 {
+	font-family: "Gothic A1";
+	font-weight: 700;
+}
+
+.article h3 {
+	padding: 5px 10px;
+	font-family: "Gothic A1";
+	font-weight: 300;
+}
+
+.article p {
+	padding: 5px 20px;
+	font-family: "Gothic A1";
+	font-weight: 300;
+	text-align: justify;
+}

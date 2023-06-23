@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Gothic+A1:100,300,700");
+
+.newarticle {
+	font-family: "Gothic A1";
+	font-weight: 700;
+	margin: 50px;
+	padding: 30px 100px;
+	box-shadow: 5px 5px 10px #b4c4d2;
+	background-color: #ffffff88;
+	border-radius: 15px;
+}
+
+.newarticle:hover {
+	box-shadow: inset 5px 5px 10px #b4c4d2, inset -3px -3px 10px #b4c4d2;
+}
+
+.newarticle:active {
+	box-shadow: inset 10px 10px 10px #b4c4d2, inset -6px -6px 10px #b4c4d2;
+}

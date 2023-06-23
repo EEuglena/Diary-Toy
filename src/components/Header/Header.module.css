@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans:400");
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.titlebox {
+	width: 600px;
+	margin-top: 40px;
+	padding: 20px;
+	box-shadow: -10px -10px 20px #f4ffff, 10px 10px 20px #b4c4d2;
+	border-radius: 30px;
+
+	text-align: center;
+	font-family: "Black Han Sans";
+	font-size: 36pt;
+	color: #185088;
+}
