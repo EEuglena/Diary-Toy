@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Diary-Toy/static/css/main.9af09e84.css",
+    "main.js": "/Diary-Toy/static/js/main.6a2eb280.js",
+    "index.html": "/Diary-Toy/index.html",
+    "main.9af09e84.css.map": "/Diary-Toy/static/css/main.9af09e84.css.map",
+    "main.6a2eb280.js.map": "/Diary-Toy/static/js/main.6a2eb280.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9af09e84.css",
+    "static/js/main.6a2eb280.js"
+  ]
+}
