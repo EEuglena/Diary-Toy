@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans:400");
+@font-face {
+	font-family: "Chosunilbo_myungjo";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
 
 .header {
 	display: flex;
@@ -7,14 +13,13 @@
 }
 
 .titlebox {
-	width: 600px;
+	width: min(600px, 60vw);
 	margin-top: 40px;
 	padding: 20px;
-	box-shadow: -10px -10px 20px #f4ffff, 10px 10px 20px #b4c4d2;
-	border-radius: 30px;
+
+	border-bottom: 1px solid black;
 
 	text-align: center;
-	font-family: "Black Han Sans";
+	font-family: "Chosunilbo_myungjo";
 	font-size: 36pt;
-	color: #185088;
 }

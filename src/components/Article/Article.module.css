@@ -1,28 +1,67 @@
-@import url("https://fonts.googleapis.com/css?family=Gothic+A1:100,300,700");
+@font-face {
+	font-family: "Chosunilbo_myungjo";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
 
 .article {
-	width: 60vw;
-	margin-bottom: 50px;
-	padding: 5vw;
-	box-shadow: 10px 10px 10px #b4c4d2;
-	background-color: #ffffff88;
-	border-radius: 15px;
+	position: relative;
+	width: min(40vw, 400px);
+	margin-top: 50px;
+	padding: 30px;
+
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.article * {
+	color: black;
+	text-decoration: none;
 }
 
 .article h1 {
-	font-family: "Gothic A1";
+	font-family: "Chosunilbo_myungjo";
 	font-weight: 700;
+	font-size: 20pt;
 }
 
 .article h3 {
-	padding: 5px 10px;
-	font-family: "Gothic A1";
+	padding: 10px 10px;
+	font-family: "Chosunilbo_myungjo";
 	font-weight: 300;
+	font-size: 10pt;
 }
 
 .article p {
-	padding: 5px 20px;
-	font-family: "Gothic A1";
+	padding: 10px 0;
+	font-family: "Chosunilbo_myungjo";
 	font-weight: 300;
+	font-size: 12pt;
 	text-align: justify;
+}
+
+.article button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 10px;
+	right: 10px;
+	font-size: 16pt;
+	background-color: white;
+	color: tomato;
+	outline: 2px solid white;
+	box-shadow: inset 0 0 0 tomato;
+	border: none;
+	border-radius: 100%;
+	transition: 0.2s ease-in-out;
+}
+
+.article button:hover {
+	outline: 1px solid tomato;
+	box-shadow: inset 0 0 5px tomato;
 }
