@@ -14,6 +14,7 @@
 
 .titlebox {
 	width: min(600px, 60vw);
+	height: 50px;
 	margin-top: 40px;
 	padding: 20px;
 
@@ -22,4 +23,12 @@
 	text-align: center;
 	font-family: "Chosunilbo_myungjo";
 	font-size: 36pt;
+	cursor: pointer;
+	transition: 0.15s ease-in-out;
+	line-height: 50px;
+}
+
+.titlebox:hover {
+	line-height: 40px;
+	text-shadow: 5px 5px 0 #dddddd;
 }

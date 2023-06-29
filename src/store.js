@@ -19,10 +19,18 @@ const articles = createSlice({
 			localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newState));
 			return newState;
 		},
+		edit: (state, action) => {
+			const newState = [
+				action.payload,
+				...state.filter((item) => item.id !== action.payload.id),
+			];
+			localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newState));
+			return newState;
+		},
 	},
 });
 
 const store = configureStore({ reducer: articles.reducer });
 
-export const { add, remove } = articles.actions;
+export const { add, remove, edit } = articles.actions;
 export default store;

@@ -1,9 +1,84 @@
+@font-face {
+	font-family: "MaruBuri-Regular";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
 .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-top: 60px;
 }
 
 .container * {
-	margin: 10px 0;
+	font-family: "MaruBuri-Regular";
+}
+
+.title {
+	border: none;
+	width: 100%;
+	height: 40px;
+	font-size: 20pt;
+	padding: 0 10px;
+	margin-bottom: 30px;
+}
+
+.title::placeholder {
+	font-size: 20pt;
+}
+
+.title:focus {
+	outline: none;
+}
+
+.content {
+	border: 1px solid #00000030;
+	width: 100%;
+	height: 300px;
+	margin-bottom: 30px;
+	padding: 10px;
+	line-height: 160%;
+	font-size: 12pt;
+}
+
+.content::placeholder {
+	font-size: 12pt;
+}
+
+.content:focus {
+	outline: none;
+}
+
+.cancel {
+	width: 60px;
+	height: 40px;
+	margin: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: #ffcac1;
+	font-size: 12pt;
+	font-weight: 600;
+	color: #505050;
+}
+
+.cancel:hover {
+	background-color: #f5a99c;
+}
+
+.confirm {
+	width: 60px;
+	height: 40px;
+	margin: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: #b5ddaa;
+	font-size: 12pt;
+	font-weight: 600;
+	color: #505050;
+}
+
+.confirm:hover {
+	background-color: #87d173;
 }

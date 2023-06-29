@@ -1,0 +1,75 @@
+@font-face {
+	font-family: "Chosunilbo_myungjo";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.article * {
+	width: 100%;
+	font-family: "Chosunilbo_myungjo";
+}
+
+.article h1 {
+	font-weight: 700;
+	font-size: 20pt;
+	margin-bottom: 30px;
+}
+
+.article h3 {
+	font-weight: 300;
+	font-size: 10pt;
+	margin-bottom: 30px;
+}
+
+.article p {
+	font-weight: 300;
+	font-size: 12pt;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+
+.buttonbar {
+	display: flex;
+	justify-content: center;
+}
+
+.edit {
+	width: 60px;
+	height: 40px;
+	margin: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: #e0e0e0;
+	font-size: 12pt;
+	font-weight: 600;
+	color: #505050;
+}
+
+.edit:hover {
+	background-color: #c0c0c0;
+}
+
+.remove {
+	width: 60px;
+	height: 40px;
+	margin: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: #ffcac1;
+	font-size: 12pt;
+	font-weight: 600;
+	color: #505050;
+}
+
+.remove:hover {
+	background-color: #f5a99c;
+}

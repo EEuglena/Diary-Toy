@@ -15,6 +15,7 @@
 	font-size: 32pt;
 	font-weight: 100;
 	color: #666666;
+	cursor: pointer;
 }
 
 .newarticle:hover {

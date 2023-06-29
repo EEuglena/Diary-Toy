@@ -1,33 +1,37 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import styles from "./Write.module.css";
-import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { add } from "../store";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { edit } from "../store";
 
-function Write() {
-	const [title, setTitle] = useState("");
-	const [content, setContent] = useState("");
+function Edit() {
+	const { id } = useParams();
+	const articles = useSelector((state) => state);
+	const article = articles.find((item) => item.id === parseInt(id));
+	const [title, setTitle] = useState(article?.title);
+	const [content, setContent] = useState(article?.content);
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
-	const today = new Date();
+
+	useEffect(() => {
+		if (!article) {
+			return navigate("/");
+		}
+	}, []);
 
 	return (
 		<form
 			className={styles.container}
-			onSubmit={() => {
+			onSubmit={(event) => {
+				event.preventDefault();
 				dispatch(
-					add({
+					edit({
+						...article,
 						title,
-						date: `${today.getFullYear()}년 ${today.getMonth()}월 ${today.getDate()}일 ${today.getHours()}:${
-							today.getMinutes() > 9
-								? today.getMinutes()
-								: "0" + today.getMinutes()
-						}`,
 						content,
-						id: Date.now(),
 					})
 				);
-				navigate("/");
+				navigate(-1);
 			}}
 		>
 			<input
@@ -51,7 +55,7 @@ function Write() {
 				<button
 					className={styles.cancel}
 					type="reset"
-					onClick={() => navigate("/")}
+					onClick={() => navigate(-1)}
 				>
 					취소
 				</button>
@@ -63,4 +67,4 @@ function Write() {
 	);
 }
 
-export default Write;
+export default Edit;
